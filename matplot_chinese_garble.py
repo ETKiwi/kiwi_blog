@@ -2,10 +2,13 @@
 """
 Created on Fri Feb 10 09:29:03 2023
 
-@author: user
+@author: Kiwi
 """
 import matplotlib.pyplot as plt
+from matplotlib import font_manager
 import numpy as np
+
+
 
 # 建立資料
 def data():
@@ -15,6 +18,11 @@ def data():
     
     return x, y
 
+# 檢視內鍵字體
+def font_list():
+    for f in font_manager.fontManager.ttflist:
+        print(f.name)
+        
 # 繪圖
 def plt_plot(x, y, title = '繪圖'):
     plt_chinese
